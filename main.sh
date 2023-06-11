@@ -9,7 +9,7 @@ add-apt-repository ppa:pikaos/pika
 add-apt-repository ppa:kubuntu-ppa/backports
 apt install pika-sources.deb --yes --option Acquire::Retries=5 --option Acquire::http::Timeout=100 --option Dpkg::Options::="--force-confnew"
 # Clone Upstream
-git clone https://github.com/lbonn/rofi.git
+git clone --recurse-submodules https://github.com/lbonn/rofi.git
 cd rofi
 git checkout 1.7.5+wayland1
 cp -rvf ../debian ./
