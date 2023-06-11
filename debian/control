@@ -4,8 +4,12 @@ Priority: optional
 Maintainer: ferrreo <harderthanfire@gmail.com>
 Standards-Version: 4.6.1
 Build-Depends: debhelper-compat (= 13),
-                bison,
+               bison,
                flex,
+               meson,
+               ninja-build,
+               cmake,
+               cmake-extras,
                libpango1.0-dev,
                libstartup-notification0-dev,
                libxkbcommon-dev (>= 0.5.0),
