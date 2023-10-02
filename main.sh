@@ -5,7 +5,7 @@ DEBIAN_FRONTEND=noninteractive
 # Clone Upstream
 git clone --recurse-submodules https://github.com/lbonn/rofi.git
 cd rofi
-git checkout 1.7.5+wayland1
+git checkout 1.7.5+wayland2
 cp -rvf ../debian ./
 
 # Get build deps
